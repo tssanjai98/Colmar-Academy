@@ -1,4 +1,4 @@
-Colmar Academy
+# Colmar Academy
 
 This is a capstone project by [Codecademy](https://www.codecademy.com) as a part of the Responsive web design skill path.
 
