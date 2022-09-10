@@ -4,7 +4,7 @@
   --button-color-mobile: #9b9b9b;
   --add-info-color: #5294e3;
   --courses-section-background: #f5f4f5;
-  --course-background: #d8d8d8;
+  --course-background: #eaebec;
 }
 
 * {
@@ -31,6 +31,14 @@ header nav.mobile {
   width: 100%;
 }
 
+.logo {
+  display: none;
+}
+
+.wide-screen-nav {
+  display: none;
+}
+
 .mobile > ul {
   display: flex;
   align-items: center;
@@ -38,7 +46,8 @@ header nav.mobile {
   list-style-type: none;
 }
 
-.main {
+main {
+  position: relative;
   top: 64px;
 }
 
@@ -48,6 +57,10 @@ header nav.mobile {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.large-img {
+  display: none;
 }
 
 .intro > .img-div {
@@ -86,9 +99,26 @@ header nav.mobile {
   color: white;
 }
 
+.about-div button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
 .events {
   width: 100%;
   padding: 16px 16px 32px;
+}
+
+.info-left {
+  display: none;
+}
+
+.event-right {
+  display: none;
+}
+
+.event-right-mobile {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 64px;
@@ -123,6 +153,12 @@ header nav.mobile {
   background-color: var(--courses-section-background);
 }
 
+.course > .course-img,
+.course-info > .p-head,
+.course-info > .p-content {
+  display: none;
+}
+
 .courses h1 {
   font-size: 2rem;
   margin-bottom: 16px;
@@ -141,13 +177,18 @@ header nav.mobile {
   padding: 16px;
 }
 
-.course p {
+.course h4 {
   font-size: 1.5rem;
 }
 
 .thesis-exhibits {
   width: 100%;
   padding: 32px 0 16px;
+}
+
+.thesis-info,
+.thesis-items {
+  display: none;
 }
 
 .thesis-exhibits h1 {
@@ -161,10 +202,311 @@ header nav.mobile {
 }
 
 footer {
+  position: relative;
+  top: 64px;
   width: 100%;
   padding: 16px;
 }
 
-footer p {
+footer .cr-info > p {
   font-size: 0.75rem;
+  color: var(--button-color-mobile);
+}
+
+footer .agreement {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .logo {
+    display: inline;
+    width: 40%;
+  }
+
+  .logo img {
+    scale: 1.5;
+  }
+
+  .logo p {
+    display: inline;
+    font-size: 1.75rem;
+    color: var(--button-color-mobile);
+    position: relative;
+    bottom: 6px;
+  }
+
+  .logo-name-main {
+    font-weight: 550;
+    color: var(--font-color);
+  }
+
+  .wide-screen-nav {
+    width: 60%;
+    display: inline;
+    position: relative;
+    bottom: 3px;
+  }
+
+  .wide-screen-nav ul {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  .wide-screen-nav ul > li > a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 1rem;
+  }
+
+  .wide-screen-nav ul > li > a:hover {
+    color: var(--button-color-mobile);
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px;
+    padding: 32px 24px;
+  }
+
+  .img-div {
+    display: none;
+  }
+
+  .intro > .large-img {
+    position: relative;
+    display: inline;
+    width: 100%;
+    height: auto;
+  }
+
+  .about-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+
+  .about-div p {
+    font-size: 1.6rem;
+  }
+
+  .about-div h1,
+  .about-div p,
+  .about-div button {
+    width: 90%;
+  }
+
+  .about-div button {
+    font-size: 1.25rem;
+    background-color: var(--font-color);
+  }
+
+  .events {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .info-left {
+    display: block;
+    padding: 32px 24px 0px;
+  }
+
+  .info-left img {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .info-left h1 {
+    margin-bottom: 24px;
+    font-size: 2rem;
+  }
+
+  .info-left p {
+    color: var(--button-color-mobile);
+    margin-bottom: 32px;
+  }
+
+  .event-right-mobile {
+    display: none;
+  }
+
+  .event-right {
+    border-left: 1px solid var(--course-background);
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .event {
+    display: flex;
+    gap: 24px;
+    padding: 16px;
+    border-top: 1px solid var(--course-background);
+  }
+
+  .event:first-child {
+    border-top: none;
+  }
+
+  .event:last-child {
+    background-color: var(--bg-color-primary);
+  }
+
+  .event img {
+    width: 35%;
+    height: auto;
+  }
+
+  .event-details h3,
+  .event-details p {
+    margin-bottom: 8px;
+  }
+
+  .courses {
+    padding: 32px 72px;
+  }
+
+  .courses h1 {
+    margin-bottom: 32px;
+  }
+
+  .course > .course-img,
+  .course-info > .p-head,
+  .course-info > .p-content {
+    display: block;
+  }
+
+  .courses-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .course {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #fff;
+  }
+
+  .course-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .course-info {
+    padding: 0 16px 24px;
+  }
+
+  .course-info h3,
+  .course-info p {
+    margin-bottom: 8px;
+  }
+
+  .p-head,
+  .p-content {
+    color: var(--button-color-mobile);
+  }
+
+  .thesis-info,
+  .thesis-items {
+    display: block;
+  }
+
+  .thesis-exhibits h1 {
+    margin-bottom: 32px;
+  }
+
+  .thesis-exhibits-div {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px;
+  }
+
+  .thesis:first-child {
+    background-color: var(--bg-color-primary);
+  }
+
+  .video-div {
+    padding: 0 0 32px 24px;
+  }
+
+  .video-div video {
+    margin-bottom: 24px;
+  }
+
+  .video-div h2 {
+    margin-bottom: 8px;
+  }
+
+  .thesis {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 7fr 13fr;
+    gap: 16px;
+  }
+
+  .thesis-info p {
+    color: var(--button-color-mobile);
+  }
+
+  .thesis-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .thesis-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .thesis-exhibits {
+    border-bottom: 1px solid var(--bg-color-primary);
+  }
+
+  footer {
+    padding: 16px 24px 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .agreement {
+    display: inline;
+  }
+
+  footer .cr-info p,
+  footer .agreement a {
+    font-size: 1rem;
+  }
+
+  footer .agreement a {
+    color: var(--button-color-mobile);
+    text-decoration: none;
+    margin-right: 5px;
+  }
+
+  footer .agreement a:hover {
+    color: var(--font-color);
+  }
 }

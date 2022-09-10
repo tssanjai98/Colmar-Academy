@@ -9,6 +9,18 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <img src="./resources/images/ic-logo.svg" alt="logo" />
+        <p><span class="logo-name-main">COLMAR</span><span>ACADEMY</span></p>
+      </div>
+      <div class="wide-screen-nav">
+        <ul>
+          <li><a href="#">On campus</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">For companies</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </div>
       <nav class="mobile">
         <ul>
           <li>
@@ -29,6 +41,11 @@
     <main>
       <div class="intro">
         <div class="img-div"></div>
+        <img
+          src="./resources/images/banner.jpg"
+          alt="banner"
+          class="large-img"
+        />
         <div class="about-div">
           <h1>Learn something new everyday</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -36,33 +53,85 @@
         </div>
       </div>
       <div class="events">
-        <div class="event">
+        <div class="info-left">
           <img
-            src="./resources/images/information-orientation-mobile.jpg"
-            alt="orientation"
+            src="./resources/images/information-main.jpg"
+            alt="information-main"
           />
-          <div class="event-details">
-            <h3>Orientation date</h3>
-            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-            <a class="add-info" href="#">Read more</a>
+          <h1>It doesn't hurt to keep practicing</h1>
+          <p>
+            &quot;Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+            velit quibusdam tempora quo et eveniet omnis nisi, consequatur
+            molestias nesciunt odit fugiat sequi ipsa rem saepe qui quia. Modi,
+            saepe.&quot;
+          </p>
+          <cite>Emanuel, Sr Strategist at Hiring</cite>
+        </div>
+        <div class="event-right">
+          <div class="event">
+            <img
+              src="./resources/images/information-orientation.jpg"
+              alt="orientation"
+            />
+            <div class="event-details">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a class="add-info" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="event">
+            <img src="./resources/images/information-campus.jpg" />
+            <div class="event-details">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a class="add-info" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="event">
+            <img src="./resources/images/information-guest-lecture.jpg" />
+            <div class="event-details">
+              <h3>Special guest lecture</h3>
+              <p>
+                Join a keynote with Oliver Slack about music in medical
+                treatment
+              </p>
+              <a class="add-info" href="#">Read more</a>
+            </div>
           </div>
         </div>
-        <div class="event">
-          <img src="./resources/images/information-campus-mobile.jpg" />
-          <div class="event-details">
-            <h3>Our campus</h3>
-            <p>Find which campus is close by you</p>
-            <a class="add-info" href="#">Read more</a>
+
+        <div class="event-right-mobile">
+          <div class="event">
+            <img
+              src="./resources/images/information-orientation-mobile.jpg"
+              alt="orientation"
+            />
+            <div class="event-details">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <a class="add-info" href="#">Read more</a>
+            </div>
           </div>
-        </div>
-        <div class="event">
-          <img src="./resources/images/information-guest-lecture-mobile.jpg" />
-          <div class="event-details">
-            <h3>Special guest lecture</h3>
-            <p>
-              Join a keynote with Oliver Slack about music in medical treatment
-            </p>
-            <a class="add-info" href="#">Read more</a>
+          <div class="event">
+            <img src="./resources/images/information-campus-mobile.jpg" />
+            <div class="event-details">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a class="add-info" href="#">Read more</a>
+            </div>
+          </div>
+          <div class="event">
+            <img
+              src="./resources/images/information-guest-lecture-mobile.jpg"
+            />
+            <div class="event-details">
+              <h3>Special guest lecture</h3>
+              <p>
+                Join a keynote with Oliver Slack about music in medical
+                treatment
+              </p>
+              <a class="add-info" href="#">Read more</a>
+            </div>
           </div>
         </div>
       </div>
@@ -70,34 +139,142 @@
         <h1>Start Learning</h1>
         <div class="courses-div">
           <div class="course">
-            <p>Software engineering</p>
+            <img
+              src="./resources/images/course-software.jpg"
+              alt="software"
+              class="course-img"
+            />
+            <div class="course-info">
+              <h3>Software engineering</h3>
+              <p class="p-head">COURSES</p>
+              <p class="p-content">
+                Web Development, Mobile Development, iOT, APIs
+              </p>
+            </div>
           </div>
           <div class="course">
-            <p>Computer art</p>
+            <img
+              src="./resources/images/course-computer-art.jpg"
+              alt="computer-art"
+              class="course-img"
+            />
+            <div class="course-info">
+              <h3>Computer art</h3>
+              <p class="p-head">COURSES</p>
+              <p class="p-content">
+                Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                Computer Animation
+              </p>
+            </div>
           </div>
           <div class="course">
-            <p>Design</p>
+            <img
+              src="./resources/images/course-design.jpg"
+              alt="design"
+              class="course-img"
+            />
+            <div class="course-info">
+              <h3>Design</h3>
+              <p class="p-head">COURSES</p>
+              <p class="p-content">
+                User Experience Design, User Research, Visual Design
+              </p>
+            </div>
           </div>
           <div class="course">
-            <p>Data</p>
+            <img
+              src="./resources/images/course-data.jpg"
+              alt="data"
+              class="course-img"
+            />
+            <div class="course-info">
+              <h3>Data</h3>
+              <p class="p-head">COURSES</p>
+              <p class="p-content">
+                Data Science, Big Data, SQL, Data Visualization
+              </p>
+            </div>
           </div>
           <div class="course">
-            <p>Business</p>
+            <img
+              src="./resources/images/course-business.jpg"
+              alt="business"
+              class="course-img"
+            />
+            <div class="course-info">
+              <h3>Business</h3>
+              <p class="p-head">COURSES</p>
+              <p class="p-content">
+                Product Development, Business Development, Startup
+              </p>
+            </div>
           </div>
           <div class="course">
-            <p>Maketing</p>
+            <img
+              src="./resources/images/course-marketing.jpg"
+              alt="marketing"
+              class="course-img"
+            />
+            <div class="course-info">
+              <h3>Maketing</h3>
+              <p class="p-head">COURSES</p>
+              <p class="p-content">
+                Analytics, Content Marketing, Mobile Marketing
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="thesis-exhibits">
         <h1>Thesis exhibits</h1>
-        <div class="video-div">
-          <video src="./resources/videos/thesis.mp4" controls></video>
+        <div class="thesis-exhibits-div">
+          <div class="video-div">
+            <video src="./resources/videos/thesis.mp4" controls></video>
+            <div class="thesis-info">
+              <h2>Reimagine urban</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                assumenda dolores non cupiditate magnam nostrum architecto, unde
+                atque natus dolore neque minus eius, hic beatae impedit porro ad
+                accusamus vitae.
+              </p>
+            </div>
+          </div>
+          <div class="thesis-items">
+            <div class="thesis">
+              <img
+                src="./resources/images/thesis-fisma.jpg"
+                alt="fisma"
+                class="thesis-img"
+              />
+              <div class="thesis-desc">
+                <h2>Fisma: Design and Prototype</h2>
+                <p>Designer showcase of new prototype product</p>
+              </div>
+            </div>
+            <div class="thesis">
+              <img
+                src="./resources/images/thesis-now-and-then.jpg"
+                alt="now-then"
+                class="thesis-img"
+              />
+              <div class="thesis-desc">
+                <h2>Now and then</h2>
+                <p>Research study about New York</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer>
-      <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+      <div class="cr-info">
+        <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+      </div>
+      <div class="agreement">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+      </div>
     </footer>
   </body>
 </html>
